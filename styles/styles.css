@@ -9,7 +9,8 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
+    overflow: hidden; /* Se agregó para limpiar floats internos */
 }
 
 header {
@@ -21,6 +22,7 @@ header {
 
 header h1 {
     font-size: 36px;
+    margin: 0;
 }
 
 #sidebar {
@@ -29,6 +31,7 @@ header h1 {
     padding: 20px;
     border-right: 1px solid #ccc;
     float: left;
+    transition: transform 0.3s ease; /* Animación de transición para el sidebar */
 }
 
 #sidebar ul {
@@ -37,15 +40,16 @@ header h1 {
 }
 
 #sidebar ul li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 #sidebar ul li a {
     text-decoration: none;
     color: #333;
     font-size: 18px;
-    transition: color 0.3s ease;
     display: block;
+    padding: 10px 0;
+    transition: color 0.3s ease;
 }
 
 #sidebar ul li a:hover {
@@ -60,16 +64,16 @@ header h1 {
 section {
     margin-bottom: 50px;
     float: left;
-    width: calc(100% - 250px); /* El ancho del contenido principal menos el ancho de la barra lateral */
+    width: calc(100% - 270px);
 }
 
 section:last-child {
-    margin-bottom: 0; /* Eliminar el margen inferior del último bloque */
+    margin-bottom: 0;
 }
 
 section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    margin: 0 0 20px;
     color: #333;
     text-align: center;
 }
@@ -82,16 +86,17 @@ section h2 {
 .content img {
     display: block;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     max-width: 600px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .content p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     color: #666;
+    margin-bottom: 15px;
 }
 
 footer {
