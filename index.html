@@ -3,65 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theritex GitHub Main Page</title>
+    <title>Theritex - Forjando futuros digitales</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <meta name="author" content="Andrés Ruslan Abadías Otal" />
+    <meta name="description" content="Página web de Theritex, Forjando futuros digitales con diseño innovador." />
+    <meta property="og:image" content="https://..." />
+    <meta name="twitter:title" content="Theritex Main Website" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Welcome to Theritex's GitHub Page</h1>
+        <div class="header-container">
+            <div class="left-header">
+                <h1>Theritex</h1>
+                <p>Forjando futuros digitales</p>
+            </div>
+            <div class="center-header">
+                <h2>Diseño Digital</h2>
+            </div>
         </div>
-    </header>
-
-    <div class="container">
-        <nav id="sidebar">
+        <nav id="navbar">
             <ul>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about-us.html">Sobre Nosotros</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
+    </header>
 
-        <main id="main-content">
-            <section id="about-us">
-                <h2>About Us</h2>
-                <div class="content">
-                    <img src="images/about-us.jpg" alt="About Us">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempor sit amet quam non convallis. Nulla facilisi. Phasellus elementum leo et nisl tincidunt consequat. Integer vel augue at est suscipit tempus in et arcu. Sed ac ullamcorper ante.</p>
-                    <p>Aliquam erat volutpat. Duis ac libero id purus luctus feugiat. Nulla eget libero at elit tristique feugiat in nec turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    <main>
+        <section id="home">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="images/slider1.jpg" alt="Imagen 1">
                 </div>
-            </section>
+                <div class="slide">
+                    <img src="images/slider2.jpg" alt="Imagen 2">
+                </div>
+                <div class="slide">
+                    <img src="images/slider3.jpg" alt="Imagen 3">
+                </div>
+            </div>
+        </section>
 
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="content">
-                    <img src="images/projects.jpg" alt="Projects">
-                    <ul>
-                        <li>Project 1</li>
-                        <li>Project 2</li>
-                        <li>Project 3</li>
-                    </ul>
-                </div>
-            </section>
+        <section id="about-us">
+            <h2>Sobre Nosotros</h2>
+            <p>En Theritex nos dedicamos a crear soluciones innovadoras en diseño y desarrollo digital. Forjamos futuros sostenibles y digitales para nuestros clientes.</p>
+        </section>
 
-            <section id="contact">
-                <h2>Contact</h2>
-                <div class="content">
-                    <img src="images/contact.jpg" alt="Contact">
-                    <p>Contact information goes here.</p>
-                    <p>Email: example@example.com</p>
-                    <p>Phone: +123 456 7890</p>
+        <section id="projects">
+            <h2>Proyectos Recientes</h2>
+            <div class="project-list">
+                <div class="project-card">
+                    <img src="images/project1.jpg" alt="Proyecto 1">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción breve del proyecto 1.</p>
                 </div>
-            </section>
-        </main>
-    </div>
+                <div class="project-card">
+                    <img src="images/project2.jpg" alt="Proyecto 2">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción breve del proyecto 2.</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/project3.jpg" alt="Proyecto 3">
+                    <h3>Proyecto 3</h3>
+                    <p>Descripción breve del proyecto 3.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Si deseas saber más, ¡contáctanos! Estamos aquí para ayudarte a llevar tu proyecto al siguiente nivel.</p>
+            <p>Email: example@example.com</p>
+            <p>Teléfono: +123 456 7890</p>
+        </section>
+    </main>
 
     <footer>
-        <div class="container">
-            <p>© 2024 Theritex. All rights reserved.</p>
-        </div>
+        <p>© 2024 Theritex. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="javascript/sidebar.js"></script>
+    <script src="javascript/script.js"></script>
 </body>
 </html>
